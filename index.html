@@ -11,24 +11,32 @@
 
 <body>
     <h1>Pokemon</h1>
-    <input type="text" id="search" placeholder="Buscar pokemon">
-    <button id="search-button">Buscar</button>
-    <!--Mostrar un mensjae si el pokemon no existe-->
-    <dialog id="modal">
-        <h2>El pokemon no exite</h2>
-        <button id="cerrar-modal" class="btn-danger">Cerrar</button>
-    </dialog>
-    <!--Agregar un mensaje de error si la petición falla-->
-    <p id="peticion-fail" style="color: red;"></p>
-    <!--Mostrar un spinner mientras se hace la petición-->
-    <div id="spinner" class="spinner"></div>
+    <label for="search"> Busca tu Pokémon favorito ingresando su nombre o ID en el campo de búsqueda. También puedes
+        buscar
+        por tipo o habilidad, lo que te mostrará todos los Pokémon que coincidan con ese tipo o habilidad.</label>
+    <input type="text" id="search" placeholder="Ingrese su búsqueda">
+    <div class="button-container">
+        <button id="search-button">Buscar</button>
+        <!--Mostrar un mensjae si el pokemon no existe-->
+        <dialog id="modal">
+            <h2>El pokemon no exite</h2>
+            <button id="cerrar-modal" class="btn-danger">Cerrar</button>
+        </dialog>
+        <!--Agregar un mensaje de error si la petición falla-->
+        <p id="peticion-fail" style="color: red;"></p>
+        <!--Mostrar un spinner mientras se hace la petición-->
+        <div id="spinner" class="spinner"></div>
+        <!--Pokemon Aleatorio-->
+        <button id="random">Pokemon Aleatorio</button>
+        <!--Agregar un botón para buscar un pokemon por id.-->
+        <button id="search-button-id">Buscar por ID</button>
+        <!--Agregar un botón para buscar un pokemon por tipo.-->
+        <button id="search-button-type">Buscar por tipo</button>
+        <!--Agregar un botón para buscar un pokemon por habilidad.-->
+        <button id="search-button-ability">Buscar por habilidad</button>
 
-
-    <div id="pokemon"></div>
-
-
-
-
+    </div>
+    <div id="pokemon" class="container"></div>
     <script src="app.js"></script>
 
 </body>
