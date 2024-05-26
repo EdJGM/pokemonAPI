@@ -17,15 +17,8 @@
     <input type="text" id="search" placeholder="Ingrese su búsqueda">
     <div class="button-container">
         <button id="search-button">Buscar</button>
-        <!--Mostrar un mensjae si el pokemon no existe-->
-        <dialog id="modal">
-            <h2>El pokemon no exite</h2>
-            <button id="cerrar-modal" class="btn-danger">Cerrar</button>
-        </dialog>
         <!--Agregar un mensaje de error si la petición falla-->
         <p id="peticion-fail" style="color: red;"></p>
-        <!--Mostrar un spinner mientras se hace la petición-->
-        <div id="spinner" class="spinner"></div>
         <!--Pokemon Aleatorio-->
         <button id="random">Pokemon Aleatorio</button>
         <!--Agregar un botón para buscar un pokemon por id.-->
@@ -36,6 +29,13 @@
         <button id="search-button-ability">Buscar por habilidad</button>
 
     </div>
+    <!--Mostrar un spinner mientras se hace la petición-->
+    <div id="spinner" class="spinner"></div>
+    <!--Mostrar un mensjae si el pokemon no existe-->
+    <dialog id="modal">
+        <h2>El pokemon no exite</h2>
+        <button id="cerrar-modal" class="btn-danger">Cerrar</button>
+    </dialog>
     <div id="pokemon" class="container"></div>
     <script src="app.js"></script>
 
